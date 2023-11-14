@@ -399,8 +399,7 @@ p {
   grid-column: span 2;
 }
 
-.habilities__info,
-.habilities__languages {
+.habilities__info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -414,12 +413,16 @@ p {
   margin: 0;
 }
 
+.habilities__languages__title {
+  grid-column: span 3;
+}
+
 .habilities__item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  margin-left: 20%;
+  /* margin-left: 20%; */
 }
 
 .habilities__icon {
@@ -433,8 +436,19 @@ p {
 
 /* LANGUAGES */
 
+.habilities__languages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+
 .habilities__languages .habilities__card {
   gap: 0.5rem;
+}
+
+.habilities__languages .habilities__icon {
+  width: 40px;
 }
 
 /* PROJECTS */
