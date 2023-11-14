@@ -16,5 +16,6 @@ closeMenuBtn.addEventListener('click', () => {
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
     menu.classList.remove('show');
+    document.body.classList.remove('no-scroll');
   })
 });

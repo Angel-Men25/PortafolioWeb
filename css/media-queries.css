@@ -32,9 +32,15 @@
   }
 
   /* HABILITIES */
-
   .habilities__item {
     margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  /* PROJECTS */
+  .projects__categorie {
+    grid-column: span 1;
   }
 }
 

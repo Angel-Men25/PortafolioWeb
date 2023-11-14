@@ -85,8 +85,8 @@
             <img src="assets/images/profile-pic.jpeg" alt="Angel Valdez Foto" class="about__img">
           </figure>
           <div class="about__texts">
-            <p class="about__text-1">Actualmente curso la carrera de Ingeniería Mecatrónica pero estoy enfocándome  en la ruta para
-              ser un desarrollador web y ampliar mi campo laboral. Me fascina el desarrollo front end porque me permite crear sitios web en base a un diseño y así poder ofrecer una experiencia de usuario única y satisfactoria.</p>
+            <p class="about__text-1">Actualmente me enfoco en la ruta para
+              ser un desarrollador web y ampliar mi campo laboral. Me fascina el desarrollo frontend porque a partir de HTML, CSS y JavaScript, además de otros frameworks y librerías, puedo crear sitios web en base a un diseño o desde cero siempre ofreciendo una experiencia de usuario única y satisfactoria.</p>
 
             <p class="about__text-2">Me considero una persona autodidacta que le gusta aprender cada día más y lo suficientemente comprometida para aportar mi granito de arena en cada proyecto a futuro.</p>
           </div>
@@ -122,19 +122,15 @@
           <h3 class="habilities__languages__title">Como desarrollador</h3>
           <article class="languages__item">
             <img src="assets/icons/html5.svg" alt="Formación continua" class="habilities__icon">
-            <!-- <p class="habilities__title">Intermedio</p> -->
           </article>
           <article class="languages__item">
             <img src="assets/icons/css3-alt.svg" alt="Formación continua" class="habilities__icon">
-            <!-- <p class="habilities__title">Intermedio</p> -->
           </article>
           <article class="languages__item">
             <img src="assets/icons/square-js.svg" alt="Formación continua" class="habilities__icon">
-            <!-- <p class="habilities__title">Básico</p> -->
           </article>
           <article class="languages__item">
             <img src="assets/icons/sass-logo-7702.svg" alt="Formación continua" class="habilities__icon">
-            <!-- <p class="habilities__title">Intermedio</p> -->
           </article>
           <article class="languages__item">
             <img src="assets/icons/git-alt.svg" alt="Formación continua" class="habilities__icon">
@@ -153,6 +149,7 @@
       <div class="projects__container container">
         <h2 class="subtitle projects__subtitle">Proyectos</h2>
         <div class="projects__cards">
+          <p class="projects__categorie">Hechos por mí</p>
           <article class="projects__card">
             <div class="projects__carousel">
               <div class="carousel__container">
@@ -183,9 +180,18 @@
                 <p class="projects__language projects__language-css">CSS</p>
                 <p class="projects__language projects__language-js">JavaScript</p>
               </div>
-              <p class="projects__description">Tienda online con funcionalidades como agregar y eliminar productos al carrito, ademas de filtros que muestran unicamente el tipo de producto que se desea. Cuenta con Local Storage.</p>
+              <p class="projects__description">Tienda online con funcionalidades como agregar y eliminar productos al carrito, así como filtros que dividen en categorias los productos. Cuenta con formulario de validación para agregar datos de una tarjeta de crédito.</p>
+              <p class="projects__list--title">Características principales:</p>
+              <div class="projects__list">
+                <ul>
+                  <li><span>Local Storage</span></li>
+                  <li><span>Diseño Responsivo</span></li>
+                  <li><span>Comsumo de REST API</span></li>
+                  <li><span>Validación de formulario</span></li>
+                </ul>
+              </div>
               <div class="projects__buttons">
-                <a href="https://taupe-medovik-7fd874.netlify.app/" target="_blank" class="projects__link">
+                <a href="#" target="_blank" class="projects__link">
                   <i class="fa-solid fa-globe"></i>
                   <span>Sitio web</span>
                 </a>
@@ -205,13 +211,13 @@
                 </button>
                 <div class="carousel__list carousel__list-2">
                   <div class="carousel__element">
-                    <img src="assets/images/compra-autos-laptop.png" alt="Compra autos Mockup Laptop">
+                    <img src="assets/images/recetario-laptop.png" alt="Recetario Mockup Laptop">
                   </div>
                   <div class="carousel__element">
-                    <img src="assets/images/compra-autos-phone.png" alt="Compra autos Mockup Phone">
+                    <img src="assets/images/recetario-phone.png" alt="Recetario Mockup Phone">
                   </div>
                   <div class="carousel__element">
-                    <img src="assets/images/compra-autos-ipad.png" alt="Compra autos Mockup Ipad">
+                    <img src="assets/images/recetario-ipad.png" alt="Recetario Mockup Ipad">
                   </div>
                 </div>
                 <button aria-label="Siguiente"  class="carousel__next carousel__next-2">
@@ -221,25 +227,35 @@
               <div role="tablist" class="carousel__indicadores carousel__indicadores-2"></div>
             </div>
             <div class="projects__texts">
-              <h3 class="projects__title">Compra de autos</h3>
+              <h3 class="projects__title">Recetario</h3>
               <div class="projects__languages">
                 <p class="projects__language projects__language-html">HTML</p>
                 <p class="projects__language projects__language-css">CSS</p>
                 <p class="projects__language projects__language-js">JavaScript</p>
               </div>
-              <p class="projects__description">Página web donde se muestran autos en venta con diferentes caracteristicas, se le agrego la funcionalidad de filtrar la busqueda de los autos dependiendo los rangos de precio, año, color, etc.</p>
+              <p class="projects__description">Página web en la que puedes encontrar recetas de todo el mundo separadas por categorias, haz clic en tu favorita y se te mostrarán sus ingredientes, instrucciones de preparación, link a un video en YouTube y más.</p>
+              <p class="projects__list--title">Características principales:</p>
+              <div class="projects__list">
+                <ul>
+                  <li><span>Diseño Responsivo</span></li>
+                  <li><span>Comsumo de REST API</span></li>
+                  <li><span>Validación de formulario</span></li>
+                </ul>
+              </div>
               <div class="projects__buttons">
-                <a href="https://euphonious-pudding-9d044c.netlify.app/" target="_blank" class="projects__link">
+                <a href="#" target="_blank" class="projects__link">
                   <i class="fa-solid fa-globe"></i>
                   <span>Sitio web</span>
                 </a>
-                <a href="https://github.com/Angel-Men25/Buscador-de-autos.git" target="_blank" class="projects__link">
+                <a href="https://github.com/Angel-Men25/Recetario" target="_blank" class="projects__link">
                   <i class="fa-solid fa-code"></i>
                   <span>Código</span>
                 </a>
               </div>
             </div>
           </article>
+
+          <p class="projects__categorie projects__categorie--mt">Frontend Mentor</p>
 
           <article class="projects__card">
             <div class="projects__carousel">
