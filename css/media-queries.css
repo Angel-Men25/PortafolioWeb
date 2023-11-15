@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 969px) {
   /* PROJECTS */
   .projects__categorie {
     grid-column: span 1;
@@ -147,7 +147,7 @@
     width: 90%;
   }
 
-  .hero__cv {
+  .hero__github {
     margin-top: 1.8rem;
   }
 

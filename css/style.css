@@ -258,7 +258,7 @@ p {
   font-size: 1.8rem;
 }
 
-.hero__cv {
+.hero__github {
   display: flex;
   align-items: center;
   justify-self: flex-start;
@@ -268,7 +268,7 @@ p {
   background-color: var(--primary-color);
   padding: 0.6rem 1.8rem;
   border-radius: 8px;
-  margin-top: 2.8rem;
+  margin-top: 1rem;
   font-weight: 500;
 
   transition: 0.2s ease all;
@@ -374,6 +374,7 @@ p {
   border-radius: 1rem;
   padding: 2rem;
   height: min-content;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .about__text-1 {
@@ -473,6 +474,9 @@ p {
   max-width: 600px;
   background-color: rgb(255, 255, 255);
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .subtitle {
@@ -568,7 +572,7 @@ p {
 
 /* PROJECTS TEXTS */
 .projects__texts {
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
@@ -627,9 +631,11 @@ p {
 
 /* PROJECTS BUTTONS */
 .projects__buttons {
+  margin: 2rem;
   display: flex;
+  align-items: flex-end;
   gap: 1rem;
-  margin-top: 2rem;
+  height: 100%;
 }
 
 .projects__link {
