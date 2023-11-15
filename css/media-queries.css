@@ -246,7 +246,7 @@
     margin: 2rem auto 0;
   }
 
-  .hero__cv {
+  .hero__giººººººººººººthub {
     justify-self: center;
     margin-top: 2rem;
   }
@@ -388,8 +388,9 @@
   }
 
   .habilities__languages {
-    gap: 2rem;
+    gap: 0rem;
     column-gap: 0;
+    width: 100%;
   }
 
   .habilities__languages .habilities__icon {
@@ -397,7 +398,6 @@
   }
 
   /* PROJECTS */
-
   .projects__card {
     width: 350px;
     margin: 0 auto;
@@ -410,6 +410,11 @@
 
   .projects__title {
     margin-top: 1rem;
+  }
+  .projects__categorie {
+    grid-column: span 1;
+    width: 200px;
+    margin: 0 auto;
   }
 }
 
@@ -453,11 +458,13 @@
   }
 
   .habilities__info>.habilities__item {
-    margin-left: 10%;
+    margin-left: 0;
+    padding-left: 10%;
+    /* background-color: rebeccapurple; */
+    width: 310px;
   }
 
   /* PROJECTS */
-
   .projects__card {
     width: 310px;
     margin: 0 auto;
