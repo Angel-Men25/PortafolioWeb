@@ -5,14 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angel Valdez</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media-queries.css">
+  <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon">
-  <!-- slider -->
+  <!-- Slider JS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header class="hero" id="home">
     <div class="background">
       <div class="shape shape1"></div>
@@ -25,7 +30,7 @@
 
     <div class="background__container">
       <div class="nav">
-        <nav class="hero__nav container">
+        <div class="hero__nav container">
           <a href="./index.html" class="hero__logo">AV</a>
           <button aria-label="Abrir menu" class="open-menu">
             <img src="assets/icons/bars-solid.svg" class="open-menu-icon">
@@ -40,9 +45,10 @@
             <li><a href="#projects" class="hero__link">Proyectos</a></li>
             <li><a href="#contact" class="hero__link">Contacto</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
 
+      <!-- HERO SECTION -->
       <section class="hero__section container" id="inicio">
         <div class="hero__texts">
           <div class="hero__title">
@@ -52,10 +58,10 @@
           <h3>Desarrollador Web</h3>
           <p class="hero__copy">Apasionado por el mundo de la programación y tecnología. Me encanta estar en constante aprendizaje para desarrollar nuevas habilidades y ponerlas en practica en cada uno de mis proyectos personales.
           </p>
-          <!-- <a href="#" download="CV-Angel Valdez" class="hero__cv">
-            <img src="assets/icons/file.svg" alt="File icon" class="hero__icon">
-            <span>Descargar CV</span>
-          </a> -->
+          <a href="https://github.com/Angel-Men25" class="hero__github" target="_blank">
+            <img src="assets/icons/github.svg" alt="File icon" class="hero__icon">
+            <span>GitHub</span>
+          </a>
         </div>
 
         <figure class="hero__picture">
@@ -70,6 +76,7 @@
   </header>
 
   <main class="main">
+    <!-- ABOUT SECTION -->
     <section class="about__section" id="about">
       <div class="about__container container">
         <h2 class="subtitle about__subtitle">Sobre mí</h2>
@@ -78,8 +85,8 @@
             <img src="assets/images/profile-pic.jpeg" alt="Angel Valdez Foto" class="about__img">
           </figure>
           <div class="about__texts">
-            <p class="about__text-1">Actualmente curso la carrera de Ingeniería Mecatrónica pero estoy enfocándome  en la ruta para
-              ser un desarrollador web y ampliar mi campo laboral. Me fascina el desarrollo front end porque me permite crear sitios web en base a un diseño y así poder ofrecer una experiencia de usuario única y satisfactoria.</p>
+            <p class="about__text-1">Actualmente me enfoco en la ruta para
+              ser un desarrollador web y ampliar mi campo laboral. Me fascina el desarrollo frontend porque a partir de HTML, CSS y JavaScript, además de otros frameworks y librerías, puedo crear sitios web en base a un diseño o desde cero siempre ofreciendo una experiencia de usuario única y satisfactoria.</p>
 
             <p class="about__text-2">Me considero una persona autodidacta que le gusta aprender cada día más y lo suficientemente comprometida para aportar mi granito de arena en cada proyecto a futuro.</p>
           </div>
@@ -87,6 +94,7 @@
       </div>
     </section>
 
+    <!-- HABILITIES SECTION -->
     <section class="habilities__section" id="habilities">
       <div class="habilities__container container">
         <h2 class="subtitle habilities__subtitle">Habilidades</h2>
@@ -112,30 +120,34 @@
 
         <div class="habilities__languages">
           <h3 class="habilities__languages__title">Como desarrollador</h3>
-          <article class="habilities__item">
+          <article class="languages__item">
             <img src="assets/icons/html5.svg" alt="Formación continua" class="habilities__icon">
-            <p class="habilities__title">Intermedio</p>
           </article>
-          <article class="habilities__item">
+          <article class="languages__item">
             <img src="assets/icons/css3-alt.svg" alt="Formación continua" class="habilities__icon">
-            <p class="habilities__title">Intermedio</p>
           </article>
-          <article class="habilities__item">
+          <article class="languages__item">
             <img src="assets/icons/square-js.svg" alt="Formación continua" class="habilities__icon">
-            <p class="habilities__title">Básico</p>
           </article>
-          <article class="habilities__item">
+          <article class="languages__item">
             <img src="assets/icons/sass-logo-7702.svg" alt="Formación continua" class="habilities__icon">
-            <p class="habilities__title">Intermedio</p>
+          </article>
+          <article class="languages__item">
+            <img src="assets/icons/git-alt.svg" alt="Formación continua" class="habilities__icon">
+          </article>
+          <article class="languages__item">
+            <img src="assets/icons/github2.svg" alt="Formación continua" class="habilities__icon">
           </article>
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS SECTION -->
     <section class="projects__section" id="projects">
       <div class="projects__container container">
         <h2 class="subtitle projects__subtitle">Proyectos</h2>
         <div class="projects__cards">
+          <p class="projects__categorie">Hechos por mí</p>
           <article class="projects__card">
             <div class="projects__carousel">
               <div class="carousel__container">
@@ -166,9 +178,25 @@
                 <p class="projects__language projects__language-css">CSS</p>
                 <p class="projects__language projects__language-js">JavaScript</p>
               </div>
-              <p class="projects__description">Tienda online con funcionalidades como agregar y eliminar productos al carrito, ademas de filtros que muestran unicamente el tipo de producto que se desea. Cuenta con Local Storage.</p>
-              <a href="https://taupe-medovik-7fd874.netlify.app/" target="_blank" class="projects__link">
+              <p class="projects__description">Tienda online con funcionalidades como agregar y eliminar productos al carrito, así como filtros que dividen en categorias los productos. Cuenta con formulario de validación para agregar datos de una tarjeta de crédito.</p>
+              <p class="projects__list--title">Características principales:</p>
+              <div class="projects__list">
+                <ul>
+                  <li><span>Local Storage</span></li>
+                  <li><span>Diseño Responsivo</span></li>
+                  <li><span>Consumo de REST API</span></li>
+                  <li><span>Validación de formulario</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="projects__buttons">
+              <a href="https://av-store.netlify.app/cart" target="_blank" class="projects__link">
+                <i class="fa-solid fa-globe"></i>
                 <span>Sitio web</span>
+              </a>
+              <a href="https://github.com/Angel-Men25/Tienda-E-commerce.git" target="_blank" class="projects__link">
+                <i class="fa-solid fa-code"></i>
+                <span>Código</span>
               </a>
             </div>
           </article>
@@ -181,13 +209,13 @@
                 </button>
                 <div class="carousel__list carousel__list-2">
                   <div class="carousel__element">
-                    <img src="assets/images/compra-autos-laptop.png" alt="Compra autos Mockup Laptop">
+                    <img src="assets/images/recetario-laptop.png" alt="Recetario Mockup Laptop">
                   </div>
                   <div class="carousel__element">
-                    <img src="assets/images/compra-autos-phone.png" alt="Compra autos Mockup Phone">
+                    <img src="assets/images/recetario-phone.png" alt="Recetario Mockup Phone">
                   </div>
                   <div class="carousel__element">
-                    <img src="assets/images/compra-autos-ipad.png" alt="Compra autos Mockup Ipad">
+                    <img src="assets/images/recetario-ipad.png" alt="Recetario Mockup Ipad">
                   </div>
                 </div>
                 <button aria-label="Siguiente"  class="carousel__next carousel__next-2">
@@ -197,18 +225,35 @@
               <div role="tablist" class="carousel__indicadores carousel__indicadores-2"></div>
             </div>
             <div class="projects__texts">
-              <h3 class="projects__title">Compra de autos</h3>
+              <h3 class="projects__title">Recetario</h3>
               <div class="projects__languages">
                 <p class="projects__language projects__language-html">HTML</p>
                 <p class="projects__language projects__language-css">CSS</p>
                 <p class="projects__language projects__language-js">JavaScript</p>
               </div>
-              <p class="projects__description">Página web donde se muestran autos en venta con diferentes caracteristicas, se le agrego la funcionalidad de filtrar la busqueda de los autos dependiendo los rangos de precio, año, color, etc.</p>
-              <a href="https://euphonious-pudding-9d044c.netlify.app/" target="_blank" class="projects__link">
+              <p class="projects__description">Página web en la que puedes encontrar recetas de todo el mundo separadas por categorias, haz clic en tu favorita y se te mostrarán sus ingredientes, instrucciones de preparación, link a un video en YouTube y más.</p>
+              <p class="projects__list--title">Características principales:</p>
+              <div class="projects__list">
+                <ul>
+                  <li><span>Diseño Responsivo</span></li>
+                  <li><span>Consumo de REST API</span></li>
+                  <li><span>Validación de formulario</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="projects__buttons">
+              <a href="https://recipesbook-av.netlify.app/" target="_blank" class="projects__link">
+                <i class="fa-solid fa-globe"></i>
                 <span>Sitio web</span>
+              </a>
+              <a href="https://github.com/Angel-Men25/Recetario" target="_blank" class="projects__link">
+                <i class="fa-solid fa-code"></i>
+                <span>Código</span>
               </a>
             </div>
           </article>
+
+          <p class="projects__categorie projects__categorie--mt">Frontend Mentor</p>
 
           <article class="projects__card">
             <div class="projects__carousel">
@@ -218,13 +263,13 @@
                 </button>
                 <div class="carousel__list carousel__list-3">
                   <div class="carousel__element">
-                    <img src="assets/images/lista-de-tareas-laptop.png" alt="Lista de tareas Mockup Laptop">
+                    <img src="assets/images/buscador-pais-laptop.png" alt="Lista de tareas Mockup Laptop">
                   </div>
                   <div class="carousel__element">
-                    <img src="assets/images/lista-de-tareas-phone.png" alt="Lista de tareas Mockup Phone">
+                    <img src="assets/images/buscador-pais-phone.png" alt="Lista de tareas Mockup Phone">
                   </div>
                   <div class="carousel__element">
-                    <img src="assets/images/lista-de-tareas-ipad.png" alt="Lista de tareas Mockup Ipad">
+                    <img src="assets/images/buscador-pais-ipad.png" alt="Lista de tareas Mockup Ipad">
                   </div>
                 </div>
                 <button aria-label="Siguiente"  class="carousel__next carousel__next-3">
@@ -234,15 +279,32 @@
               <div role="tablist" class="carousel__indicadores carousel__indicadores-3"></div>
             </div>
             <div class="projects__texts">
-              <h3 class="projects__title">Lista de tareas</h3>
+              <h3 class="projects__title">Buscador de países</h3>
               <div class="projects__languages">
                 <p class="projects__language projects__language-html">HTML</p>
-                <p class="projects__language projects__language-sass">SASS</p>
+                <p class="projects__language projects__language-css">CSS</p>
                 <p class="projects__language projects__language-js">JavaScript</p>
               </div>
-              <p class="projects__description">Aplicación web para listar tareas pendientes por realizar, tiene funcionalidades como poder marcar las tareas si ya fueron realizadas y eliminarlas. Cuenta con Local Storage.</p>
-              <a href="https://64f0c9e92d2c0a7ea76d21ee--delicate-bubblegum-b8072f.netlify.app/" target="_blank" class="projects__link">
+              <p class="projects__description">Página web donde puedes aprender acerca de información demográfica relacionada con todos los países del mundo. Haz clic sobre un país para conocer información más detallada. Cuenta con filtros de búsqueda por región.</p>
+              <p class="projects__list--title">Características principales:</p>
+              <div class="projects__list">
+                <ul>
+                  <li><span>Reto de <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a></span></li>
+                  <li><span>Diseño Responsivo</span></li>
+                  <li><span>Consumo de REST API</span></li>
+                  <li><span>Dark Mode</span></li>
+                  <li><span>Filtros de búsqueda</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="projects__buttons">
+              <a href="https://buscador-de-paises-av.netlify.app/" target="_blank" class="projects__link">
+                <i class="fa-solid fa-globe"></i>
                 <span>Sitio web</span>
+              </a>
+              <a href="https://github.com/Angel-Men25/Buscador-de-Paises" target="_blank" class="projects__link">
+                <i class="fa-solid fa-code"></i>
+                <span>Código</span>
               </a>
             </div>
           </article>
@@ -255,13 +317,13 @@
                 </button>
                 <div class="carousel__list carousel__list-4">
                   <div class="carousel__element">
-                    <img src="assets/images/calculadora-laptop.png" alt="Calculadora Mockup Laptop">
+                    <img src="assets/images/landing-laptop.png" alt="Calculadora Mockup Laptop">
                   </div>
                   <div class="carousel__element">
-                    <img src="assets/images/calculadora-phone.png" alt="Calculadora Mockup Phone">
+                    <img src="assets/images/landing-phone.png" alt="Calculadora Mockup Phone">
                   </div>
                   <div class="carousel__element">
-                    <img src="assets/images/calculadora-ipad.png" alt="Calculadora Mockup Ipad">
+                    <img src="assets/images/landing-ipad.png" alt="Calculadora Mockup Ipad">
                   </div>
                 </div>
                 <button aria-label="Siguiente"  class="carousel__next carousel__next-4">
@@ -271,22 +333,37 @@
               <div role="tablist" class="carousel__indicadores carousel__indicadores-4"></div>
             </div>
             <div class="projects__texts">
-              <h3 class="projects__title">Calculadora</h3>
+              <h3 class="projects__title">Landing page</h3>
               <div class="projects__languages">
                 <p class="projects__language projects__language-html">HTML</p>
                 <p class="projects__language projects__language-css">CSS</p>
                 <p class="projects__language projects__language-js">JavaScript</p>
               </div>
-              <p class="projects__description">Calculadora básica en la que se puede realizar operaciones como suma, resta, multiplicación y división.</p>
-              <a href="https://dulcet-marshmallow-5e4765.netlify.app/" target="_blank" class="projects__link">
-                <span>Sitio web</span>
-              </a>
+              <p class="projects__description">Landing page para marcas creativas que buscan atraer nuevos usuarios. Tiene secciones como galería, cards informativas de servicios y testimonios de clientes.</p>
+              <p class="projects__list--title">Características principales:</p>
+              <div class="projects__list">
+                <ul>
+                  <li><span>Reto de <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a></span></li>
+                  <li><span>Diseño Responsivo</span></li>
+                </ul>
+              </div>
             </div>
+            <div class="projects__buttons">
+                <a href="https://sunnyside-landing-page-av.netlify.app/" target="_blank" class="projects__link">
+                  <i class="fa-solid fa-globe"></i>
+                  <span>Sitio web</span>
+                </a>
+                <a href="https://github.com/Angel-Men25/Sunnyside-agency-landing-page" target="_blank" class="projects__link">
+                  <i class="fa-solid fa-code"></i>
+                  <span>Código</span>
+                </a>
+              </div>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section class="contact__section" id="contact">
       <div class="contact__container">
         <form class="contact__form" id="contact__form">
@@ -312,12 +389,15 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; <span id="año-actual"></span> Angel Valdez</p>
   </footer>
 
   <!-- slider -->
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1d47c3ee1f.js" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
   <script src="js/correo.js"></script>
   <script src="js/slider.js"></script>
