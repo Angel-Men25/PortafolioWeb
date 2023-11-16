@@ -246,7 +246,7 @@
     margin: 2rem auto 0;
   }
 
-  .hero__giººººººººººººthub {
+  .hero__github {
     justify-self: center;
     margin-top: 2rem;
   }
@@ -459,14 +459,20 @@
 
   .habilities__info>.habilities__item {
     margin-left: 0;
-    padding-left: 10%;
+    padding-left: 15%;
     /* background-color: rebeccapurple; */
     width: 310px;
   }
 
   /* PROJECTS */
   .projects__card {
-    width: 310px;
+    width: 295px;
     margin: 0 auto;
+  }
+  .projects__buttons {
+    margin: 1rem;
+  }
+  .projects__link {
+    font-size: 14px;
   }
 }

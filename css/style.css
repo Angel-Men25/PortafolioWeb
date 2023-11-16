@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-  outline: 2px solid red;
-}
-
 :root {
   --padding-container: 5rem 0;
 
@@ -16,6 +12,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--white);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
 }
 
 p {
@@ -143,6 +143,7 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
   position: absolute;
   backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
   overflow: hidden;
 }
 
@@ -284,6 +285,7 @@ p {
 
 .hero__github:hover {
   box-shadow: 3px 3px 0 0 #000;
+  transform: translateY(-2px);
 }
 
 /* FIGURE */
